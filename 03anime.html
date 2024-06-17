@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            z-index: -2;
+        }
+
+        .mydiv1 {
+            height: 600px;
+            ;
+            width: auto;
+            background-size: contain;
+            /* 調整圖片大小以填滿整個區域 */
+            background-position: center;
+            position: fixed;
+            /* 將圖片置中 */
+            z-index: -1;
+            /* 將背景圖層置於其他內容之後 */
+        }
+
+        .top1 {
+            height: 50px;
+
+            background-color: hsl(0, 0%, 7%);
+        }
+
+        .border1 {
+            border: #ffffff;
+        }
+
+        .mydiv3 {
+            height: 50px
+        }
+
+        .top2 {
+            height: 400px;
+            background-color: #1b1b1b;
+        }
+
+
+        .content {
+            position: relative;
+        }
+
+        .content img {
+            position: absolute;
+            left: 0%;
+            top: 0;
+            transform: translate(10%, -0%);
+        }
+
+        .content video {
+            width: 100%;
+
+        }
+
+        .video-container {
+            border: 5px solid hsl(0, 0%, 49%);
+            /* 白色外框線，可以根據需要調整寬度和顏色 */
+            padding: px;
+            /* 可選的內邊距，可以根據需要調整 */
+        }
+
+        .bottom2 {
+            height: 100px;
+           
+            background-color: #796279;
+        }
+
+                /* footer */
+                * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #111;
+        }
+
+        .footerContainer {
+            width: 100%;
+            padding: 70px 30px 20px;
+        }
+
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .socialIcons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .socialIcons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0, 9;
+        }
+
+        /* Hover affect on social media icon */
+        .socialIcons a:hover {
+            background-color: #111;
+            transition: 0.5s;
+        }
+
+        .socialIcons a:hover i {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .footerNav {
+            margin: 30px 0;
+        }
+
+        .footerNav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .footerNav ul li a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+
+        }
+
+        .footerNav ul li a:hover {
+            opacity: 1;
+        }
+
+        .footerBottom {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footerBottom p {
+            color: white;
+        }
+
+        .designer {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+
+        @media (max-width: 700px) {
+            .footerNav ul {
+                flex-direction: column;
+            }
+
+            .footerNav ul li {
+                width: 100%;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .socialIcons a {
+                padding: 8px;
+                margin: 4px;
+            }
+        }
+
+        .wrapper {
+            flex: 1;
+        }
+        /* footer */
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- 置頂 -->
+    <div class="top1">
+        <ul class=" nav nav-tabs align-items-end">
+            <li><img class="mydiv3  nav-link" src="img/主2.png" alt="" onclick="window.location.href = 'index.html'"></li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="01about.html">About me</a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Illustration</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="02illust.html">插圖</a></li>
+                    <!--<li><a class="dropdown-item" href="插圖1.html">插圖</a></li>-->
+                    <li><a class="dropdown-item" href="Q版1.html">Q版</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="03anime.html">Animation</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Work</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="04work.html">插圖</a></li>
+                    <li><a class="dropdown-item" href="04work Q.html">Q版</a></li>
+                </ul>
+            </li>
+
+            <!--<li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>-->
+        </ul>
+    </div>
+    <!-- 置頂 -->
+
+    <div class="d-flex justify-content-evenly" style="color: #ffffff;">
+        <h1 class="mt-5 opacity">Animation</h1>
+    </div>
+
+    <div class="border m-5"></div>
+
+
+    <!-- 調查隊 -->
+    <!--<div class="nico1 rounded d-flex flex-column justify-content-center align-items-center">
+        <div>
+            <td class=""><b>【手描き】にっこり^^調査隊のテーマ / メッシャーズ</b></td>
+
+        </div>
+
+    </div>-->
+
+
+    <div class=" container ">
+        <video width="640" height="360" controls class="rounded  shadow-lg" style="transform: translate(0%, 0%);"
+            poster="img/00.jpg">
+            <source src="img/影片1.mp4" type="video/mp4">
+        </video>
+
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/20IlUV9tvbg?si=rZoKRc-DR5kQ2f7o"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class=" rounded shadow-lg "
+            style="margin-left: 10px;"></iframe>
+
+        <!--<img  class="mydiv1  mw-100 mh-100 opacity-50" style="transform: translate(-50%, -0%);"
+            src="img/NICORI.png" alt="">-->
+    </div>
+
+    <div class="container mt-5">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/D2CH5cv2BFY?si=OFceMO2bGOaku9VE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" class="rounded" allowfullscreen></iframe>
+
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/NhwAKSXFz1I?si=u5rQzpFpNCX7cnW0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" class=" rounded shadow-lg"  style=" margin-left: 10px;"
+            allowfullscreen></iframe>
+    </div>
+
+    <!--<div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/20IlUV9tvbg?si=rZoKRc-DR5kQ2f7o"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>-->
+
+    <!--<div class="content">
+        <video width="640" height="360" controls class="m-3 rounded">
+            <source src="img/【手描き】にっこり^^調査隊のテーマ _ メッシャーズ.mp4" type="video/mp4">
+        </video>
+        <img id="background2" class="mydiv1  mw-100 mh-100" src="img/NICORI.png" alt="">
+    </div>-->
+
+    <!-- 調查隊 -->
+
+    <!--<div class="card" style="width: 680px;">
+
+        <video width="640" height="360" controls class="m-3 rounded">
+            <source src="img/【手描き】にっこり^^調査隊のテーマ _ メッシャーズ.mp4" type="video/mp4">
+        </video>
+
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div>-->
+    
+    <footer>
+        <div class="footerContainer wrapper mt-5">
+            <div class="socialIcons">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100009920506492"><i
+                        class="bi bi-facebook position-relative"></i></a>
+                <a target="_blank" href="https://www.instagram.com/chian_paint/"><i
+                        class="bi bi-instagram position-relative"></i></a>
+                <a target="_blank" href="https://twitter.com/_yuki377OuO_"><i
+                        class="bi bi-twitter-x position-relative"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCxIDkm3EAsI1WD1mksdNv-w"><i
+                        class="bi bi-youtube position-relative"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="01about.html">Home</a></li>
+                    <li><a href="02illust.html">Illustration</a></li>
+                    <li><a href="03anime.html">Animation</a></li>
+                    <li><a href="04work Q.html">Work</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            <p>Design by Chian</p>
+        </div>
+    </footer>
+
+    <div id="background"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
